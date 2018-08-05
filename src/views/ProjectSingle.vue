@@ -57,10 +57,10 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-import HeroSlider from '@/components/HeroSlider.vue'
 import ListProperty from '@/components/ListProperty.vue'
 import ListNews from '@/components/ListNews.vue'
+import LightBox from 'vue-image-lightbox';
+
 
 // Data
 import PropertyData from '@/data/property.js';
@@ -69,10 +69,9 @@ import NewsFeed from '@/data/news.js';
 export default {
   name: 'ProjectSingle',
   components: {
-    HelloWorld,
-    HeroSlider,
     ListProperty,
-    ListNews
+    ListNews,
+    LightBox,
   },
   data: function() {
     return {
