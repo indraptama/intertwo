@@ -2,13 +2,13 @@
   div(class="pt-32")
     section(class="px-4 lg:px-16 text-blue-darker leading-tight mb-16 lg:mb-24")
       div(class="max-w-3xl mx-auto")
-        h1(class="lg:text-5xl mb-6 text-center") Latest News
+        h1(class="lg:text-5xl mb-6 text-center" v-scroll-reveal.reset) Latest News
     
     div(class="max-w-3xl mx-auto px-6")
       div(class="")
         ul(class="list-reset flex flex-wrap")
           // News JSON
-          li(v-for='post in news' class="w-full md:w-1/2 lg:w-1/4 xl:w-1/4 mb-4 md:px-3")
+          li(v-for='post in news' class="w-full md:w-1/2 lg:w-1/4 xl:w-1/4 mb-4 md:px-3" v-scroll-reveal.reset)
             div(class="bg-white flex md:block")
               // News Image
               <router-link to='/single-news' class="block Ratio Ratio--2x3 w-32 md:w-auto hover:opacity-75">

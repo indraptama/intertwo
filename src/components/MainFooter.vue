@@ -1,6 +1,6 @@
 <template lang="pug">
   footer(class="MainFooter relative z-10 pt-16 pb-16 bg-blue-darker text-white")
-    div(class="w-5xl px-6 mx-auto lg:flex items-center justify-between")
+    div(class="max-w-5xl px-6 mx-auto lg:flex items-center justify-between")
       div(class="mb-6")
         img(src="../assets/logo-white.png")
         div(class="mt-4 pl-3")

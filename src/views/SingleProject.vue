@@ -12,13 +12,13 @@
     // Content
     section(class="px-4 lg:px-16 mb-16 text-blue-darker leading-tight")
       div(class="max-w-2xl lg:max-w-3xl mx-auto")
-        h1(class="lg:text-5xl mb-6") Internusa Tower
-        div(class="flex items-center mb-6")
+        h1(class="lg:text-5xl mb-6" v-scroll-reveal.reset) Internusa Tower
+        div(class="flex items-center mb-6" v-scroll-reveal.reset)
           span(class="block lg:w-16 border-b border-blue-darker lg:mr-6")
           h2(class="text-sm lg:text-2xl") The Largest Office Tower in North Sumatra
     
-    div(class="max-w-2xl px-6 mx-auto mb-16 lg:mb-24 flex flex-col-reverse lg:flex-row-reverse")
-      div(class="lg:w-2/5 lg:ml-16 mb-8")
+    div(class="max-w-2xl px-6 mx-auto mb-16 lg:mb-24 flex flex-col-reverse lg:flex-row-reverse" )
+      div(class="lg:w-2/5 lg:ml-16 mb-8" v-scroll-reveal.reset)
         h4(class="mb-4 text-blue-darker text-blue-darker") Project Location
         div(class="borders py-4")
           div(class="border-b pb-4 mb-4")
@@ -44,7 +44,7 @@
 
 
 
-      div(class="lg:w-3/5 leading-loose")
+      div(class="lg:w-3/5 leading-loose" v-scroll-reveal.reset)
         .content.max-w-md.mx-auto(class="mb-4 lg:mb-12")
           h4(class="mb-4 text-blue-darker text-blue-darker") Project Description
           p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."

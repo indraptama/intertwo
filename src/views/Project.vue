@@ -8,15 +8,15 @@
       div(class="relative px-6 max-w-5xl vh-90 flex items-end lg:items-center mx-auto pb-16 lg:pb-0 z-10 text-white")
         div(class="hero-devider")
         div(class="w-full mx-auto")
-          h1(class="lg:text-5xl mb-6") Redefining Norms<br/>Through Innovative Design
-          div(class="flex items-center mb-6")
+          h1(class="lg:text-5xl mb-6" v-scroll-reveal.reset) Our Projects<br/>with Innovative Design
+          div(class="flex items-center mb-6" v-scroll-reveal.reset)
             span(class="block lg:w-24 border-b border-white lg:mr-6")
             h2(class="text-sm lg:text-2xl") Make New Design, Make New Future
     
     div.bg-white.z-10.relative.pb-32 
       section(class="")
         ul(class="list-reset project-list")
-          li(v-for='item in ProjectList' class="pt-8 lg:pt-32")
+          li(v-for='item in ProjectList' class="pt-8 lg:pt-32" v-scroll-reveal.reset)
             ProjectThumb(:title='item.title' :imgUrl='item.images[0]' :content='item.desc')
         
         

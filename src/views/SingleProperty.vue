@@ -24,12 +24,12 @@
                 div(class="RatioInner bg-cover bg-center bg-red opacity-50" :style="{'background-image':'url('+`${baseUrl}img/rumah-s4.jpg`+')'}")
 
     // Content
-    div(class="max-w-2xl px-6 mx-auto mb-8 lg:mb-8")
+    div(class="max-w-2xl px-6 mx-auto mb-8 lg:mb-8" v-scroll-reveal.reset)
       <SectionHeader title="Rumah di Jakarta Pusat"></SectionHeader>
     
     div(class="max-w-2xl px-6 mx-auto mb-16 lg:mb-24 lg:flex flex-row-reverse")
       
-      div(class="lg:w-2/5 lg:ml-16 mb-8")
+      div(class="lg:w-2/5 lg:ml-16 mb-8" v-scroll-reveal.reset)
         div(class="border p-4 bg-white lg:shadow-lg")
           div(class="border-b pb-4 mb-4")
             h3(class="text-2xl mb-1") Rp.78.000.000
@@ -48,7 +48,7 @@
 
 
 
-      div(class="lg:w-3/5 leading-loose")
+      div(class="lg:w-3/5 leading-loose" v-scroll-reveal.reset)
         .content.max-w-md.mx-auto(class="mb-4 lg:mb-12")
           h4(class="mb-4 text-blue-darker text-blue-darker") Deskripsi
           p Rumah dan Tanah berada di pinggir jalan kota, berdekatan dengan perkantoran. Sangat cocok sekali di jadikan Mess ataupun Kantor.
@@ -70,20 +70,30 @@
         .content.max-w-md.mx-auto(class="mb-4 lg:mb-12")
           h4(class="mb-4 text-blue-darker") Lokasi
           p Rumah dan Tanah berada di pinggir jalan kota, berdekatan dengan perkantoran. Sangat cocok sekali di jadikan Mess ataupun Kantor.
+
+    div(class="max-w-2xl mx-auto px-6 pb-16")
+      h3.p-2.text-blue-darker(v-scroll-reveal.reset) Related Property
+      ul(class="list-reset md:flex flex-wrap")
+        li(v-for='item in propertyHome' class="lg:w-1/4 p-2" v-scroll-reveal.reset)
+          ListHouse(:imgUrl='item.imgUrl' :title='item.title' :price='item.price' location='Bandung' :status="item.status" :type="item.type")
           
       
 </template>
 
 <script>
 import SectionHeader from '@/components/SectionHeader.vue';
+import PropertyData from '@/data/property.js';
+import ListHouse from '@/components/ListHouse.vue'
 
 export default {
   components: {
     SectionHeader,
+    ListHouse,
   },
   data () {
     return {
-      baseUrl: process.env.BASE_URL
+      baseUrl: process.env.BASE_URL,
+      propertyHome: PropertyData.slice(0,4),
     }
   }
 }

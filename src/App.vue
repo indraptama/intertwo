@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <MainHeader />
-    <router-view/>
+
+      <router-view/>
+
     <MainFooter />
   </div>
 </template>
@@ -24,6 +26,8 @@ export default {
 <style src="@/assets/inter/inter-ui.css"></style>
 <style src="@/assets/icons.css"></style>
 <style src="@/style/main.css"></style>
+
 <style>
+
 
 </style>
