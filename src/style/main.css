@@ -1,0 +1,74 @@
+/* @tailwind preflight;
+@tailwind utilities; */
+
+@import 'tailwindcss/preflight';
+
+@import './aspectratio.css';
+@import './column.css';
+
+@import 'tailwindcss/utilities';
+
+html {
+  color: #666;
+  font-size: 93.75%;
+  font-family: 'Inter UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.zigzag > div:nth-child(odd) {
+  align-self: flex-end;
+}
+
+.zigzag:first-child {
+  align-self: flex-start!important;
+}
+
+.project-list > li:nth-child(even) > div {
+  flex-flow: row-reverse;
+}
+
+.vh-90 {
+  min-height: 95vh;
+}
+
+.vh-50,
+.h-50vh {
+  min-height: 50vh;
+}
+
+.h-75vh {
+  min-height: 75vh;
+}
+
+.f-t-16 {
+  transform: translateY(-3rem)
+}
+
+.hero-devider {
+  position: absolute;
+  height: 32px;
+  width: calc(100% - 3rem);
+  background-color: white;
+  left: 1.5rem;
+  right: 0;
+  top: -16px;
+}
+
+.article p {
+  margin-bottom: 1.7em;
+}
+
+.hero75 {
+  min-height: 75vh;
+}
+
+.MainNav .router-link-exact-active {
+  font-weight: bold;
+  border-bottom: 2px solid
+}
+
+
+
+.lh-16 {
+  line-height: 4rem;
+}

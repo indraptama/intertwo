@@ -1,0 +1,32 @@
+.Ratio {
+  position: relative;
+}
+.Ratio:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+}
+.Ratio > .RatioInner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Ratio--4x3:before {
+  padding-top: 65%;
+}
+
+.Ratio--16x9:before {
+  padding-top: 56.25%;
+}
+
+.Ratio--2x1:before {
+  padding-top: 50%;
+}
+
+.Ratio--2x3:before {
+  padding-top: 125%;
+}

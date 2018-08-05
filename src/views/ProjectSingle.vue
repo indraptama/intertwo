@@ -6,14 +6,14 @@
         div(class="hero-devider")
         div(class="relative z-10 px-4 py-32 max-w-5xl mx-auto bg-white flex items-center justify-center")
           div(class="max-w-sm leading-loose lg:text-center text-sm lg:text-lg")
-            h2(class="text-xs lg:text-center mb-6 uppercase tracking-wide text-blue-darker") We Are Internusa
-            p Internusa Development berdiri pada tahun 2004 adalah perusahan swasta nasional yang bergerak dalam bidang investasi dan developer properti yang akan membangun fasilitas komersial dan kawasan industri di kota-kota urban Indonesia, seperti medan, Jakarta dan Bandung.
+            h2(class="text-xs lg:text-center mb-6 uppercase tracking-wide text-blue-darker") Internusa Tower
+            p Internusa Tower merupakan gedung dengan ketinggian 200 meter, yang dirancang sebagai gedung perkantoran tertinggi di Medan Sumatra Utara.
       
       section(class="mb-16 lg:mb-24")
         div(class="lg:flex")
           div(class="lg:w-2/3")
             div(class="Ratio Ratio--16x9 bg-blue-darker mb-4")
-              div(class="RatioInner bg-center bg-cover" style="background-image: url('img/project/tower1.jpg')")
+              div(class="RatioInner bg-center bg-cover" style="background-image: url('img/project/tower2.jpg')")
           
           div(class="lg:w-1/3 md:flex items-center")
             div(class="max-w-sm mx-auto p-8 leading-loose")
@@ -29,7 +29,7 @@
       section(class="mb-16 lg:mb-24")
         div(class="flex flex-col-reverse items-center lg:flex-row-reverse lg:items-stretch")
           div(class="md:w-1/2 lg:w-2/3 lg:flex")
-            ul(class="list-reset flex-1 lg:flex mb-6 lg:mb-0 max-w-sm lg:max-w-full mx-auto")
+            ul(class="list-reset flex-1 lg:flex mb-6 lg:mb-0 max-w-sm lg:max-w-full mx-auto bg-red")
               li(v-for='items in propertyHome' class="lg:flex flex-1 items-strech justify-end items-end relative")
                 ListProperty(:title='items.title' :imgUrl='items.imgUrl' :price='items.price')
             div(class="lg:ml-12 text-sm lg:hidden text-center")
@@ -67,7 +67,7 @@ import PropertyData from '@/data/property.js';
 import NewsFeed from '@/data/news.js';
 
 export default {
-  name: 'home',
+  name: 'ProjectSingle',
   components: {
     HelloWorld,
     HeroSlider,

@@ -1,0 +1,8 @@
+
+
+@media (min-width: 960px) {
+  .col-2 {
+    column-count: 2;
+    column-gap: 3rem;
+  }
+}
