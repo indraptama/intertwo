@@ -1,21 +1,20 @@
 <template>
   <div id="app">
     <MainHeader />
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
+    <MainFooter />
   </div>
 </template>
 
 <script>
 
 import MainHeader from '@/components/MainHeader.vue'
+import MainFooter from '@/components/MainFooter.vue'
 
 export default {
   components: {
     MainHeader,
+    MainFooter
   },
 
 }

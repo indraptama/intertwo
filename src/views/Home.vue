@@ -37,13 +37,15 @@
 
           div(class="md:w-1/2 lg:w-1/3 items-center lg:py-32")
             div(class="max-w-sm mx-auto p-8 leading-loose")
-              h2(class="text-xs mb-6 uppercase tracking-wide text-blue-darker") Property
+              div(class="flex items-center text-2xl mb-6 text-blue-darker")
+                span(class="block lg:w-8 border-b border-blue-darker lg:mr-4")
+                h3(class="leading-tight flex-1") Property
               div(class="lg:ml-12 text-sm mb-0 lg:mb-6")
                 p Selain bergerak dalam bidang Perancangan dan Konstruksi Bangunan, kami juga bergerak di bidang Real Estat dengan menyediakan Rumah, Ruko, Rukan, Apartemen atau tanah kosong untuk di jual, di sewa atau dibuat kerja sama.
               div(class="lg:ml-12 text-sm hidden lg:block")
                 router-link(to='/property' class="inline-block px-8 py-2 bg-blue-darker no-underline text-white font-bold uppercase tracking-wide text-xs border border-blue-darker hover:bg-transparent hover:text-blue-darker") Lihat Semua Properti
       
-      section
+      section.pb-16
         div(class="max-w-5xl mx-auto")
           div(class="max-w-sm mx-auto p-8 leading-loose lg:text-center")
             h2(class="text-xs mb-6 uppercase tracking-wide text-blue-darker") Latest News

@@ -48,7 +48,7 @@ export default {
    bottom: 0;
    top: 0;
    right: 0;
-   background-color: red;
+   background-color: #fff;
    height: 100%;
    z-index: 40;
   }

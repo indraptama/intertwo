@@ -2,10 +2,10 @@
   main
     section(class="vh-50 px-4 lg:px-16 pt-32 text-blue-darker leading-tight mb-16 lg:mb-24")
       div(class="max-w-5xl mx-auto")
-        h1(class="lg:text-5xl mb-6") Redefining Norms<br/>Through Innovative Design
+        h1(class="lg:text-5xl mb-6 max-w-xl") Sejak 2004, Kami Membangun dan Berinvestasi di bidang Properti
         div(class="flex items-center mb-6")
           span(class="block lg:w-24 border-b border-blue-darker lg:mr-6")
-          h2(class="text-sm lg:text-2xl") Make New Design, Make New Future
+          h2(class="text-sm lg:text-2xl") Sukses Bersama Internusa
         div(class="text-black leading-loose max-w-lg lg:ml-24 lg:pl-6 text-sm lg:text-base article")
           p Internusa Development berdiri pada tahun 2004 adalah perusahaan swasta nasional yang bergerak dalam bidang investasi dan developer properti yang telah berpengalaman membangun beberapa kawasan industri dan properti di Indonesia.
           p Didukung oleh beberapa profesional yang ahli di bidangnya, Internusa Development telah berhasil menumbuhkan kepercayaan publik dengan membangun dan merancang beberapa proyek terkemuka diantaranya adalah Internusa Tower, Internusa 800, Kawasan Industri Percut, Kawasan Wisata dan Edukasi Kopi, dan lain sebagainya.

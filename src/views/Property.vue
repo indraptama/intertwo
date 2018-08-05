@@ -1,5 +1,11 @@
 <template lang='pug'>
-  main(class="bg-grey-lighter pt-16")
+  main(class="bg-grey-lighter pt-32 mt-8")
+    div(class="fixed pin-l pin-r pin-t bg-white w-100 mt-16 px-6 z-10 h-16 shadow-lg")
+    div(class="fixed pin-l pin-r pin-t bg-white w-100 mt-16 px-6 z-50 h-16 border-t border-b flex items-center")
+      nav
+        a(href="#" class="inline-block border px-3 py-3 text-grey-darker no-underline rounded mr-4") Kategori
+        a(href="#" class="inline-block border px-3 py-3 text-grey-darker no-underline rounded mr-4") Rentang Harga
+        a(href="#" class="inline-block border px-3 py-3 text-grey-darker no-underline rounded mr-4") Lokasi
     div(class="max-w-5xl mx-auto px-4")
       ul(class="list-reset md:flex flex-wrap")
         li(v-for='item in PropertyData' class="lg:w-1/4 xl:w-1/5 p-2")

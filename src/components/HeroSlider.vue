@@ -2,7 +2,7 @@
   div(class="home bg-blue-darker relative pin-t pin-l pin-r vh-90 overflow-hidden z-10")
     // Slider
     
-    div(class="fixed pin-t pin-l pin-r pin-b h-screen w-full vh-90 h-screen bg-cover bg-center bg-red" style="background-image: url('https://source.unsplash.com/1600x900/?architecture,building')") 
+    div(class="fixed pin-t pin-l pin-r pin-b h-screen w-full vh-90 h-screen bg-cover bg-center bg-blue-darker" style="background-image: url('https://source.unsplash.com/1600x900/?architecture,building')") 
     
     div(class="absolute pin-t pin-l pin-r pin-b h-screen w-full vh-90 h-screen bg-cover bg-center bg-blue-darker opacity-50")
       
